@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, SimpleChanges, Renderer2, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -13,13 +13,32 @@ import { HeroService }  from '../hero.service';
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
 
+  @ViewChild('title', { static: false }) title: ElementRef;
+  @ViewChild('id', { static: false }) id: ElementRef;
+
   constructor(
+    private renderer: Renderer2,
+    private cdref: ChangeDetectorRef,
     private route: ActivatedRoute,
     private heroService: HeroService,
     private location: Location
-  ) {}
+  ) {
+    console.log('HeroDetailComponent::Constructor');
+  }
+
+  ngOnChanges({ hero } : SimpleChanges) {
+    if (hero) {
+      this.render(hero.currentValue);
+    }
+  }
+
+  private render(hero: Hero) {
+    this.renderer.setProperty(this.title.nativeElement, 'innerHTML', `${hero.name.toUpperCase()} Details`);
+    this.renderer.setProperty(this.id.nativeElement, 'innerHTML', `id: ${hero.id}`);
+  }
 
   ngOnInit(): void {
+    console.log('HeroDetailComponent::OnInit');
     this.getHero();
   }
 
