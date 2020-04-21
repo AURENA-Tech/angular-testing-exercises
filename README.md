@@ -19,7 +19,9 @@ Please take look at the existing Tour of Heros application - <a href="https://st
 4. Notice the hero.service.ts
 5. Notice the message.service.ts 
 </details>
+
 ---
+
 <details>
     <summary markdown="span">
         <b>💻 Exercise 2 - Test setup</b>
@@ -34,7 +36,9 @@ There are probably a lot of questions that popped up.
 We tried to cover them in a <a href="https://stackblitz.com/github/AURENA-Tech/angular-testing-exercises/tree/exercise-2?file=src%2Fapp%2Fhero-detail%2Fhero-detail.component.spec-2.ts">roundup</a>
 
 </details>
+
 ---
+
 <details>
     <summary markdown="span">
         <b>💻 Exercise 3 - Test the hero-detail component</b>
@@ -56,7 +60,9 @@ You will learn:
   - writing CSS selectors 
   - how to trigger change detection and when this is necessary 
 </details>
+
 ---
+
 <details>
     <summary markdown="span">
         <b>💻 Exercise 4 - Testing ViewChilds</b>
@@ -69,7 +75,9 @@ It is hard to tell which one is fitting the best for you, as this is dependent o
 <a href="https://stackblitz.com/github/AURENA-Tech/angular-testing-exercises/tree/exercise-4-2?file=src%2Fapp%2Fviewchild%2Fchild.component.stubbed.spec.ts">Exercise ViewChild Testing - 2</a>: using Stubs & Spies
 <a href="https://stackblitz.com/github/AURENA-Tech/angular-testing-exercises/tree/exercise-4-3?file=src%2Fapp%2Fhero-detail%2Fhero-detail.component.spec-4.ts">Exercise ViewChild Testing - 3</a>: using ViewChild architecture pattern <i>(sometimes needed for high performant compontents)</i>
 </details>
+
 ---
+
 <details>
     <summary markdown="span">
         <b>💻 Exercise 5 - Container Components & Presentational Components</b>
@@ -80,7 +88,9 @@ But it's no just our testing life. The overall developer experience should becom
 We should strive for this pattern when creating new components.
 <a href="https://stackblitz.com/github/AURENA-Tech/angular-testing-exercises/tree/exercise-5?file=src%2Fapp%2Fhero-detail%2Fhero-detail.component.spec-4.ts">Open Exercise</a>
 </details>
+
 ---
+
 <details>
     <summary markdown="span">
         <b>💻 Exercise 6 - Writing reusable (testing) modules</b>
@@ -88,7 +98,9 @@ We should strive for this pattern when creating new components.
     <br>
 <a href="https://stackblitz.com/github/AURENA-Tech/angular-testing-exercises/tree/exercise-6?file=src%2Fapp%2Fhero-detail%2Fhero-detail.component.spec-3.ts">Open Exercise</a>
 </details>
+
 ---
+
 <details>
     <summary markdown="span">
         <b>💻 Exercise 7 - Testing Pipes</b>
@@ -96,5 +108,4 @@ We should strive for this pattern when creating new components.
     <br>
 <a href="https://stackblitz.com/github/AURENA-Tech/angular-testing-exercises/tree/exercise-8?file=src%2Fapp%2Fpipe%2Fenrich.pipe.ts">Open Exercise</a>
 </details>
----
 
