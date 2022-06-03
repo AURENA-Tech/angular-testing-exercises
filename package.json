@@ -7,7 +7,7 @@
     "tslib": "1.11.1",
     "zone.js": "0.10.3",
     "jasmine-core": "3.5.0",
-    "@angular/core": "9.0.7",
+    "@angular/core": "11.0.5",
     "@angular/forms": "9.0.7",
     "@angular/common": "9.0.7",
     "@angular/router": "9.0.7",
